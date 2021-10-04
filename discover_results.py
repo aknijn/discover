@@ -110,7 +110,7 @@ for file in glob.glob("*_disc/"):
         #extract MLST
         mlst=''
         species=''
-        file2=open('mlst_results.txt').readlines()
+        file2=open('mlst_results.txt')
         file2_lines=file2.readlines()
         for line in file2_lines:
             mlst+='ST'+line.split()[2]+'; '
