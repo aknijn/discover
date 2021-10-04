@@ -1,2 +1,2 @@
 # discover
-DiSCoVeR project’s pipeline
+discover
