@@ -30,11 +30,11 @@ Correct trimmomatic
     chmod 755 ../share/trimmomatic-0.39-2/trimmomatic.jar
     ln -s ../share/trimmomatic-0.39-2/trimmomatic.jar trimmomatic.jar
 
-Move virulotyper database
+Install the virulotyper database
 
     mv /$GALAXY_ROOT/tools/discover/virulotyper /$GALAXY_ROOT/{tool_dependency_dir}/_conda/envs/mulled-v1-01518e709b4628df704fe28ad234df64efe35104c6318251731e2705afdd7d56/db
 
-Install chewBBACA database
+Install the chewBBACA database
 
     cd /$GALAXY_ROOT/tools/discover/data
     tar -xvzf schema_chewBBACA_cgMLST_V4.tar.gz
