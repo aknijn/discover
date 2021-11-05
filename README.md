@@ -6,7 +6,7 @@ INSTALLATION
 ------------
 In the $GALAXY_ROOT/tools directory: git clone https://github.com/aknijn/discover.git
 
-Activate Galaxy to use conda
+Configure Galaxy to use conda
 
 Add the following line to your /$GALAXY_ROOT/config/galaxy.yml file
 
