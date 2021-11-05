@@ -6,7 +6,20 @@ INSTALLATION
 ------------
 In the $GALAXY_ROOT/tools directory: git clone https://github.com/aknijn/discover.git
 
-Launch the tool from the Galaxy interface to install the dependencies (Galaxy should use conda to install them).
+Activate Galaxy to use conda
+
+Add the following line to your /$GALAXY_ROOT/config/galaxy.yml file
+
+    conda_auto_install: true
+
+Add the following lines to your /$GALAXY_ROOT/config/dependency_resolvers_conf.xml file
+
+    <galaxy_packages />
+    <conda />
+    <galaxy_packages versionless="true" />
+    <conda versionless="true" />
+
+Restart Galaxy and launch the tool from the Galaxy interface to install the dependencies (Galaxy should use conda to install them).
 The dependencies should be installed as an environment in the directory mulled-v1-01518e709b4628df704fe28ad234df64efe35104c6318251731e2705afdd7d56
 The first time the pipeline will fail but now the finalising steps can be performed.
 
