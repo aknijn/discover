@@ -89,9 +89,9 @@ for file in glob.glob("*_disc/"):
                         list_gene.append(line)
                         tot_mean.append(line[3])
 
-            s = sorted(list_gene, key=operator.itemgetter(1, 2, 3), reverse=True)
-            if len(s)!=0:
-                ED_best_gene.append(s[0])
+                s = sorted(list_gene, key=operator.itemgetter(1, 2, 3), reverse=True)
+                if len(s)!=0:
+                    ED_best_gene.append(s[0])
 
             #calculate mean coverage 
             mean_gene=str(round(mean(tot_mean)))

@@ -40,7 +40,9 @@ Install the chewBBACA database
     cd /$GALAXY_ROOT/tools/discover/data
     tar -xvzf schema_chewBBACA_cgMLST_V4.tar.gz
 
+Add the following line to your /$GALAXY_ROOT/config/tool_conf.xml file
 
+    <tool file="discover/discover.xml" />
 
 
 
