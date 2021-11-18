@@ -11,6 +11,8 @@ Mingkun Li
 3. Compile Instruction
    Just type  make to compile the tool.
    >make
+   If you get an error stating "File format not recognized", try typing  make clean before retrying  make
+
 4. Manual
 
   duk [options]  ref.fa query
