@@ -17,11 +17,9 @@ $tooldir/scripts/fastq-pair-master/build/fastq_pair stxdir/filtered1STX.fq.singl
 $tooldir/scripts/fastq-pair-master/build/fastq_pair stxdir/filtered2STX.fq.single.fq $fastqfile1;
 cat stxdir/filtered1STX.fq.paired.fq > stxdir/filtered1STX_paired.fq;
 cat stxdir/filtered1STX.fq.single.fq.paired.fq >> stxdir/filtered1STX_paired.fq;
-cat trimmed1.paired.fq >> stxdir/filtered1STX_paired.fq;
-#cat $fastqfile1 >> stxdir/filtered1STX_paired.fq;
+cat $fastqfile1.paired.fq >> stxdir/filtered1STX_paired.fq;
 cat stxdir/filtered2STX.fq.paired.fq > stxdir/filtered2STX_paired.fq;
-cat trimmed2.paired.fq >> stxdir/filtered2STX_paired.fq;
-#cat $fastqfile2 >> stxdir/filtered2STX_paired.fq;
+cat $fastqfile2.paired.fq >> stxdir/filtered2STX_paired.fq;
 cat stxdir/filtered2STX.fq.single.fq.paired.fq >> stxdir/filtered2STX_paired.fq;
 dukstx1filesize=$(wc -c "stxdir/filtered1STX_paired.fq" | awk '{print $1}');
 dukstx2filesize=$(wc -c "stxdir/filtered2STX_paired.fq" | awk '{print $1}');
